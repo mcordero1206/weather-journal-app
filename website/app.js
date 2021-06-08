@@ -5,7 +5,7 @@ const apiKey = '&units=imperial&appid=df94e44e870a2d0342064f3302dfb7b4';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth()+1)+'.'+ d.getDate()+'.'+ d.getFullYear();
 let time =  d.getHours();
 
 /* Function to GET Web API Data*/
