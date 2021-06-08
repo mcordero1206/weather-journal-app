@@ -1,10 +1,17 @@
-# Weather-Journal App Project
+# Udacity FEND |Project 3| Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+The purpose of this project is to develop a application that combines weather data from an external API and user input to be displayed on the page.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+##Specifications
+This project runs on Node.js and Express, Cors, and BodyParser dependencies in order to create a local web server for housing data endpoints as well as GET/POST routes. 
+
+## What I learned
+- I learned how to install and implement Node.js as well as required dependencies.
+- I learned about the basics of comuputer networking.
+- The difference between client side and server side code and how they work together.
 
 ## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+As a bonus, I made adjustments to the default styling provided in the starter code. I created a function in app.js called changeBg() which pulls the current time from the browser and then changes the background color gradient to match the sky for the current time of day. 
+
+I also added very basic error validation logic to the fuction called on form submission.
