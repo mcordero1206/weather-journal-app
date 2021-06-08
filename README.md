@@ -3,7 +3,7 @@
 ## Overview
 The purpose of this project is to develop a application that combines weather data from an external API and user input to be displayed on the page.
 
-##Specifications
+## Specifications
 This project runs on Node.js and Express, Cors, and BodyParser dependencies in order to create a local web server for housing data endpoints as well as GET/POST routes. 
 
 ## What I learned
