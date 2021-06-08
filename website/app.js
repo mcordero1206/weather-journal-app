@@ -6,7 +6,7 @@ const getWeather = async (baseURL, zipCode, apiKey) => {
       const data = await res.json();
       return data;
     } catch(error) {
-
+        
         console.log("error", error);
 
     }
@@ -21,9 +21,8 @@ const generateData = (e) => {
     try{
       console.log(data.main);
       postData('/add', {date: newDate, temp: data.main.temp, mood: mood})
-      // postGet();
+      postGet();
     }catch(error) {
-      console.log('Error happened here!')
        console.error(error)
     }
 
@@ -69,9 +68,12 @@ const postGet = async () => {
   const req = await fetch('/all');
   try {
     const allData = await req.json();
-    document.querySelector('#date').innerHTML = allData[0].date;
-    document.querySelector('#temp').innerHTML = allData[0].temp;
-    document.querySelector('#content').innerHTML = allData[0].mood;
+    document.querySelector('#date').innerHTML = allData.date;
+    document.querySelector('#temp').innerHTML = allData.temp;
+    document.querySelector('#content').innerHTML = allData.mood;
+    console.log(allData);
+    console.log(allData.date);
+    console.log(allData.mood);
   }catch(error) {
     console.log("error", error);
   }

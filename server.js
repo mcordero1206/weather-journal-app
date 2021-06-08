@@ -31,12 +31,12 @@ app.get('/all', sendData);
 //POST route
 const addData = (req, res) => {
   let data = req.body;
-  console.log('data:'+ data);
   //creating value pairs for projectData object
   projectData['date'] = data.date;
   projectData['temp'] = data.temp;
   projectData['mood'] = data.mood;
 
   res.send(projectData);
+  console.log(projectData);
 }
 app.post('/add', addData);
